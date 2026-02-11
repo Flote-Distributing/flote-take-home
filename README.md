@@ -10,9 +10,19 @@ Build a small **Product Catalog API + Frontend** using TypeScript. The goal is t
 
 ## Getting Started
 
-This project is a pnpm monorepo with Turborepo. To get it running:
+**Prerequisites:** Node.js 20+ and [pnpm](https://pnpm.io/installation) installed globally.
+
+Fork this repository to your own GitHub account, then clone your fork:
 
 ```bash
+git clone https://github.com/<your-username>/flote-take-home.git
+cd flote-take-home
+```
+
+Copy the API environment file and install dependencies:
+
+```bash
+cp apps/api/.env.example apps/api/.env
 pnpm install
 pnpm dev
 ```
@@ -20,7 +30,41 @@ pnpm dev
 - API: `http://localhost:3001` (Fastify)
 - Frontend: `http://localhost:5173` (Vite + React)
 
+Other available scripts:
+
+```bash
+pnpm build       # Build all packages
+pnpm test        # Run tests across all apps
+pnpm typecheck   # TypeScript compiler checks
+```
+
 The app currently serves a hardcoded list of products. Your job is to replace the hardcoded data with a real API integration, build out the backend logic, and create the frontend UI.
+
+### Troubleshooting
+
+**Node version errors** — This project requires Node.js 20+. Check your version with `node -v`. If you need to switch:
+
+```bash
+nvm install 20
+nvm use 20
+```
+
+Don't have nvm? Install it at [nvm-sh/nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows).
+
+**`pnpm: command not found`** — This project uses pnpm, not npm or yarn. Install it with `npm install -g pnpm`, then run `pnpm install`.
+
+**Shared types not updating** — If you modify types in `packages/types` and your apps don't reflect the changes, rebuild the types package:
+
+```bash
+pnpm --filter=@take-home/types build
+```
+
+**Port already in use** — If `localhost:3001` or `localhost:5173` is taken, kill the existing process:
+
+```bash
+lsof -ti :3001 | xargs kill   # free up the API port
+lsof -ti :5173 | xargs kill   # free up the frontend port
+```
 
 ---
 
