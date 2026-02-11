@@ -4,9 +4,7 @@
 
 Build a small **Product Catalog API + Frontend** using TypeScript. The goal is to see how you organize code, handle types, and work through a full-stack problem. Use whatever tools or resources you'd like — there are no restrictions.
 
-**Time expectation:** 4-6 hours. Please don't spend more than 6 — we'd rather see a focused, pragmatic effort than an over-engineered marathon. This follows an initial conversation and precedes a code review discussion (details below).
-
-**Deadline:** [insert date]
+**Time expectation:** 2-4 hours. Please don't spend more than 5 — we'd rather see a focused, pragmatic effort than an over-engineered marathon. This follows an initial conversation and precedes a code review discussion (details below).
 
 ---
 
@@ -162,4 +160,4 @@ After you submit, we'll schedule a **30-minute code review call**. You'll walk u
 
 ## Submission
 
-Fork this repo, do your work, and push to your fork. Send the link to [your email] when you're done.
+Fork this repo, do your work, and push to your fork. Either reach out to me on Slack or email jesse@withflote.com when your assignment is complete.
