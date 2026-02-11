@@ -2,7 +2,7 @@
   "name": "flote-take-home",
   "private": true,
   "scripts": {
-    "dev": "turbo dev",
+    "dev": "pnpm --filter=@take-home/types build && pnpm --parallel --filter='./apps/*' dev",
     "build": "turbo build",
     "test": "turbo test",
     "typecheck": "turbo typecheck"
