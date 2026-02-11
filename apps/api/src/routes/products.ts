@@ -1,5 +1,5 @@
 import type { FastifyInstance } from 'fastify';
-import { getProducts } from '../services/product.service.js';
+import { getProducts } from '../services/product.service';
 
 export async function productRoutes(app: FastifyInstance) {
   app.get('/products', async (_request, reply) => {

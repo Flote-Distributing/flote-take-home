@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getProducts } from '../services/product.service.js';
+import { getProducts } from '../services/product.service';
 
 describe('product service', () => {
   it('returns all hardcoded products', () => {

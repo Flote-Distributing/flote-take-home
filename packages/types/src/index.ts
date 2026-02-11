@@ -3,4 +3,4 @@ export type {
   ProductFilters,
   CategoryStats,
   ProductStatsResponse,
-} from './product.js';
+} from './product';
